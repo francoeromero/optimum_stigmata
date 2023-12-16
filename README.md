@@ -1,2 +1,1 @@
-# optimum_stigmata
-Tatoo's Website 
+# website_static
