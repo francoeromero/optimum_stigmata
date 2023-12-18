@@ -499,8 +499,8 @@ header.scroll {
         margin: 10rem;
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .servicios h2, .servicios p{
         scale: 0.8;
