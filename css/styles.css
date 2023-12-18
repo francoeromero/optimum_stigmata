@@ -320,13 +320,14 @@ header.scroll {
     flex-direction: column !important;
 }
 
-.servicios h2, .servicios p{
+.servicios h3, .servicios p{
     text-align: center;
 }
 .servicios h3 i {
     border: 3px solid white;
     border-radius: 5px;
     width: 3rem;
+    font-weight: bold;
     padding: 10px;
     padding-left: 5px;
     padding-top: 5px;
@@ -494,7 +495,14 @@ header.scroll {
     }
     /* // */
     /* section 3 */
-    .servicios h2, .servicios p,{
+    .servicios .textEmpresa{
+        margin: 10rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .servicios h2, .servicios p{
         scale: 0.8;
     }
     .servicios .textEmpresa{
