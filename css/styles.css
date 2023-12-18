@@ -315,6 +315,13 @@ header.scroll {
     overflow-y: hidden;
     background: none;
     height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.servicios h2, .servicios p{
+    text-align: center;
 }
 
 .contentCards{
@@ -471,8 +478,23 @@ header.scroll {
         height: 120%;
     }
 
+    .quienesSomos h2, .servicios p{
+        scale: 0.8;
+    }
+    .quienesSomos h2{
+        font-size: 2.8rem;
+    }
     /* // */
     /* section 3 */
+    .servicios h2, .servicios p,{
+        scale: 0.8;
+    }
+    .servicios .textEmpresa{
+        flex-direction: column;
+        display: flex;
+        height: 10rem;
+    }
+
     .servicios{
         height: 190vh;
     }
