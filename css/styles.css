@@ -234,6 +234,22 @@ header.scroll {
     width: 30px;
 }
 
+/* /// */
+/* section 2 quienes somos */
+.quienesSomos{
+    overflow-y: hidden;
+}
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption{
+    background-color: red;
+}
+
+.imghvr-flip-diag-1  {
+    background-color: #000000; /* Cambia esto al color que desees al hacer hover */
+    transition: background-color 0.5s ease; /* Agrega una transición suave */
+}
+
+
+
 
 @media (max-width: 991px){
     #home{
