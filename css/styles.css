@@ -521,6 +521,11 @@ header.scroll {
     .contentCards{
         flex-direction: column;
     }
+    .contentCards .demo{
+        margin-bottom: 1rem;
+        text-align: center;
+
+    }
     .contentCards .demo figure img{
         width: 500px;
     }

@@ -368,7 +368,24 @@ window.addEventListener("scroll", function () {
 });
 
 
+// enlaces del header
+  let menuLinks = document.querySelectorAll('.navigation a');
 
+
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      // Previene el comportamiento predeterminado del enlace
+      event.preventDefault();
+
+      // Quita la clase 'active' de todos los enlaces
+      menuLinks.forEach(function(link) {
+        link.classList.remove('active');
+      });
+
+      // Agrega la clase 'active' al enlace clicado
+      link.classList.add('active');
+    });
+  });
     </script>
 </body>
 </html>
