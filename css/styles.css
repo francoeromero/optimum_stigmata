@@ -323,7 +323,15 @@ header.scroll {
 .servicios h2, .servicios p{
     text-align: center;
 }
-
+.servicios h3 i {
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 3rem;
+    padding: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .contentCards{
     display: flex;
     width: 100%;
