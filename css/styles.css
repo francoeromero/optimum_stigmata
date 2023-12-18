@@ -21,6 +21,7 @@ section{
     align-items: center;
     overflow-x: hidden;
 }
+
 .bg{
     position: absolute;
     top: 0;
@@ -110,11 +111,11 @@ header.scroll {
 /* titulo */
 .content .textBox h2{
     color: #fff;
+    font-family: sans-serif; 
     font-size: 3em;
     line-height: 1.2em;
     font-weight: 700;
     -wbkit-text-stroke: 2px white;
-
 }
 /* parrafo */
 .content .textBox p{
@@ -237,12 +238,67 @@ header.scroll {
 /* /// */
 /* section 2 quienes somos */
 .quienesSomos{
+    height: 100vh;
     overflow-y: hidden;
+    background: url(../img/background_section2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption{
-    background-color: red;
+.quienesSomos::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
+.textEmpresa{
+}
+.textEmpresa h2{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #fff;
+}
+.textEmpresa p{
+    color: #fff;
+    font-family: 'Mina', sans-serif;
+    font-size: 2rem;
+}
+
+
+.textEmpresaDescripcion{}
+.textEmpresaDescripcion img {
+    width: 5rem;
+}
+
+
+.textEmpresaDescripcion h3,.textEmpresaDescripcion p{
+    color: #fff;
+}
+
+figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;   
+}
+figcaption p {
+    display: none;
+}
+/* fondo del IMAGEHOVER */
+[class*="imghvr-"] figcaption,
+[class^="imghvr-"] figcaption {
+    background: url(../img/tintas_blur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(50%) !important;
+    -webkit-backdrop-filter: blur(50%);
+}
+
+/* fondo detras del fondo IMAGEHOVER */
 .imghvr-flip-diag-1  {
     background-color: #000000; /* Cambia esto al color que desees al hacer hover */
     transition: background-color 0.5s ease; /* Agrega una transición suave */
@@ -374,6 +430,16 @@ header.scroll {
     .bote{
         margin-right: 0;
         margin-left: 150px;
+    }
+    /* section 2 */
+    .quienesSomos{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 150vh;
+    }
+    .quienesSomos::before{
+        height: 120%;
     }
 }
 
