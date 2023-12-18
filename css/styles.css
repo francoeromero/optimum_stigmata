@@ -9,7 +9,14 @@
 :root{
     --color-primario: #7d1d26;
 }
-
+body {
+    background: url(../img/background_principal.jpg);
+    background-size: cover;
+    background-position: center; 
+    transition: background-position-y 0.5s ease;
+    /* background-position-y: 160px;  */
+    background-attachment: fixed;
+}
 /* Section 1 */
 section{
     position: relative;
@@ -253,8 +260,6 @@ header.scroll {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.textEmpresa{
-}
 .textEmpresa h2{
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
@@ -278,13 +283,13 @@ header.scroll {
     color: #fff;
 }
 
-figcaption{
+.imghvr-flip-diag-1 figcaption{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;   
 }
-figcaption p {
+.imghvr-flip-diag-1 figcaption p {
     display: none;
 }
 /* fondo del IMAGEHOVER */
@@ -304,8 +309,32 @@ figcaption p {
     transition: background-color 0.5s ease; /* Agrega una transición suave */
 }
 
+/* /// */
+/* section 3 */
+.servicios{
+    overflow-y: hidden;
+    background: none;
+    height: 100vh;
+}
 
+.contentCards{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.contentCards .demo figcaption h3{
 
+}
+.contentCards .demo figcaption p{
+
+}
+.servicios .demo{
+    margin-right: 20px;
+    margin-left: 20px;
+}
 
 @media (max-width: 991px){
     #home{
@@ -440,6 +469,38 @@ figcaption p {
     }
     .quienesSomos::before{
         height: 120%;
+    }
+
+    /* // */
+    /* section 3 */
+    .servicios{
+        height: 190vh;
+    }
+    .contentCards{
+        flex-direction: column;
+
+    }
+    .contentCards .demo figcaption h3{
+        font-size: 2rem;
+    }
+    .contentCards .demo figcaption p{
+        font-size: 1rem;
+    
+    }
+}
+
+@media (max-width: 1300px){
+    .home header .logo{
+        font-size: 1.9rem;
+    }
+    .servicios{
+        height: 200vh;
+    }
+    .contentCards{
+        flex-direction: column;
+    }
+    .contentCards .demo figure img{
+        width: 500px;
     }
 }
 
