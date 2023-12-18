@@ -10,7 +10,7 @@
     --color-primario: #7d1d26;
 }
 body {
-    background: url(../img/background_principal.jpg);
+    background: url(../img/tatuador.jpg);
     background-size: cover;
     background-position: center; 
     transition: background-position-y 0.5s ease;

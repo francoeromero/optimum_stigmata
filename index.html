@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla comercial</title>
+    <title>OPTIMUM STIGMATA</title>
+    <link rel="icon" href="./img/logo.png">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -322,6 +323,7 @@ $(document).ready(function() {
 });
 
 
+
 // en responsive cada que se de click en el menu,  elimino la clase active, lo blureado
   document.addEventListener('DOMContentLoaded', function () {
     let navigation = document.querySelector('.navigation');
@@ -335,6 +337,56 @@ $(document).ready(function() {
       });
     });
   });
+
+
+
+
+
+  window.addEventListener('scroll', function () {
+  // Obtener la posición actual de desplazamiento
+  var scrollY = window.scrollY;
+
+  // Definir las posiciones de scroll para cada sección
+  var posHome = 0;
+  var posQuienesSomos = 650;
+  var posServicios = 1350;
+  var posContacto = 2150;
+
+  // Obtener los elementos de navegación
+  var elementosNav = document.querySelectorAll('.navigation li a');
+
+  // Verificar la posición de desplazamiento y agregar la clase 'active' según sea necesario
+  if (scrollY >= posHome && scrollY < posQuienesSomos) {
+    actualizarClaseActiva(elementosNav, 0); // Índice 0 para "Home"
+  } else if (scrollY >= posQuienesSomos && scrollY < posServicios) {
+    actualizarClaseActiva(elementosNav, 1); // Índice 1 para "Quienes somos"
+  } else if (scrollY >= posServicios && scrollY < posContacto) {
+    actualizarClaseActiva(elementosNav, 2); // Índice 2 para "Servicios"
+  } else if (scrollY >= posContacto) {
+    actualizarClaseActiva(elementosNav, 3); // Índice 3 para "Contacto"
+  } else {
+    // Si no se encuentra en ninguna de las secciones anteriores, eliminar todas las clases 'active'
+    elementosNav.forEach(function (elemento) {
+      elemento.classList.remove('active');
+    });
+  }
+});
+
+// Función para actualizar la clase 'active' en el elemento correspondiente
+function actualizarClaseActiva(elementos, indice) {
+  elementos.forEach(function (elemento, i) {
+    if (i === indice) {
+      // Agregar la clase 'active' al elemento actual
+      elemento.classList.add('active');
+    } else {
+      // Eliminar la clase 'active' de los demás elementos
+      elemento.classList.remove('active');
+    }
+  });
+}
+
+
+
 
 
 // para cargar de nuevo el home y se active el AOS animation 
@@ -368,7 +420,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-// enlaces del header
+// enlaces del header active
   let menuLinks = document.querySelectorAll('.navigation a');
 
 
@@ -386,6 +438,11 @@ window.addEventListener("scroll", function () {
       link.classList.add('active');
     });
   });
+
+
+
+
+  
     </script>
 </body>
 </html>
