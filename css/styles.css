@@ -29,6 +29,44 @@ section{
     overflow-x: hidden;
 }
 
+.contenedor0boton{
+    background: transparent !important;
+    /* margin-left: -1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    margin-left: -1.6rem;
+}
+.contenedor2boton, .contenedor1boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.contenedor2boton h3, .contenedor1boton h3{
+    font-size: 1.2rem;
+}
+
+.contenedor1boton{
+    width: 9rem;
+    border-radius: 1rem;
+    background: rgb(62, 62, 62);
+}
+
+.contenedor2boton{
+    /* background-color: rgb(16, 16, 16) !important; */
+}
+.contenedor2boton h3 {
+    margin-bottom: 1.65rem;
+}
+.contenedor1boton h3{
+    margin-top: .5rem;
+}
+
 .bg{
     position: absolute;
     top: 0;
@@ -109,13 +147,16 @@ header .navigation li a:hover{
     transition: .5s;
 }
 header.scroll {
-    background: #333;
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     transform: scale(1.05);
     height: 4rem;
     transition: background 0.5s, transform 0.5s, height 0.5s;
     z-index: 9999;
     transition: 1s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Contendor titulo, texto e img */
@@ -156,6 +197,7 @@ header.scroll {
     letter-spacing: 1px;
     text-decoration: none;
 }
+
 /* imagen bote */
 .content .imgBox{
     position: relative;
@@ -214,6 +256,14 @@ header.scroll {
     100%{
         transform: translateX(0%);
     }
+}
+/* *************************************************************************************************************** */
+.botonMain{
+    color: white;
+}
+.botonMain:hover {
+    color: white;
+    z-index: 44;
 }
 
 /* .thumb li::before{
@@ -302,15 +352,14 @@ header.scroll {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;   
 }
-.imghvr-flip-diag-1 figcaption p {
-    display: none;
-}
+
 /* fondo del IMAGEHOVER */
 [class*="imghvr-"] figcaption,
 [class^="imghvr-"] figcaption {
-    background: url(../img/tintas_blur.jpg);
+    /* background: url(../img/tintas_blur.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -356,17 +405,26 @@ header.scroll {
     justify-content: center;
     align-items: center;
 }
-.contentCards .demo figcaption h3{
 
-}
-.contentCards .demo figcaption p{
-
-}
 .servicios .demo{
     margin-right: 20px;
     margin-left: 20px;
 }
 
+
+/* section 4 */
+/* contact */
+
+#contact{
+    height: 100vh; 
+    background: rgb(0, 0, 0);
+    border: 2px solid red;
+    z-index: 1;
+}
+
+
+
+/* ********************************************************* */
 @media (max-width: 991px){
     #home{
         height: 100vh;
@@ -382,6 +440,13 @@ header.scroll {
     section{
         padding: 20px;
         padding-bottom: 120px;
+    }
+    .contenedor0boton{
+        display: flex !important; 
+        width: 100%;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0;
     }
     .content{
         margin-top: 10px;
@@ -545,6 +610,9 @@ header.scroll {
 @media (max-width: 1300px){
     .home header .logo{
         font-size: 1.9rem;
+    }
+    .contenedor0boton{
+        margin-left: 0;
     }
     .servicios{
         height: 200vh;
