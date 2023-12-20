@@ -70,6 +70,20 @@ font-size: 2em;
 -webkit-text-stroke: 0.5px rgb(255, 255, 255); 
 background-clip: text; 
 font-family: 'Days One', sans-serif;
+display: flex;
+flex-direction: column;
+}
+header .logo p{
+    font-size: 1.5rem;
+    margin-bottom: -0.8rem;
+    font-family: 'Days One', sans-serif;
+    font-weight: 200;
+    transform: scaleY(90%);
+}
+header .logo h5{
+    font-size: 2rem;
+    font-family: 'Days One', sans-serif;
+    font-weight: bold; 
 }
 
 header .navigation{
