@@ -27,6 +27,7 @@ section{
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .contenedor0boton{
@@ -447,7 +448,10 @@ header.scroll {
     margin-right: 1rem;
     margin-top: 10rem;
 }
-
+.content_icon a img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
 
 
 
