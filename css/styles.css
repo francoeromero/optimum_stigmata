@@ -442,7 +442,7 @@ header.scroll {
 /* contact */
 
 #contacto{
-    height: 130vh; 
+    height: 120vh; 
     background: rgb(17, 17, 17);
     margin-top: -3.5rem;
     z-index: 1;
@@ -474,9 +474,43 @@ header.scroll {
 
 
 
+.columna1, .columna2, .columna3{
+    margin-left: 1rem;
+}
+.columna1 a p{
+    font-size: 1.5rem;
+    margin-bottom: -0.8rem;
+    font-family: 'Days One', sans-serif;
+    font-weight: 200;
+    transform: scaleY(90%);
+}
+.columna1 a h5{
+    font-size: 2rem;
+    font-family: 'Days One', sans-serif;
+    font-weight: bold; 
+}
+.columna1 a {
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    color: transparent;
+    text-decoration: none;
+    font-size: 2em;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255); 
+    background-clip: text; 
+    font-family: 'Days One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+}
 
-
-
+.content_info  {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    text-decoration: none; 
+    color: rgb(156, 156, 156);
+}
 
 /* ********************************************************* */
 @media (max-width: 991px){
@@ -494,6 +528,9 @@ header.scroll {
     bg::before{
         display: none;
         background: url(..img/background_shadow.png);
+    }
+    .thumb{
+        scale: .8;
     }
     header{
         padding: 20px;
@@ -665,6 +702,12 @@ header.scroll {
     .contentCards .demo figcaption p{
         font-size: 1rem;
     
+    }
+
+    /* section 4 */
+    /* contact */
+    .content_icon{
+        scale: .8;
     }
 }
 
