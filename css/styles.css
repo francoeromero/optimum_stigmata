@@ -518,6 +518,9 @@ header.scroll {
         height: 100vh;
         overflow-y: hidden;
     }
+    .textBox h2 {
+        margin-top: 5rem;
+    }
     .esquinaRama{
         display: none;
     }
