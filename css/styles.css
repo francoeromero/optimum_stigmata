@@ -378,7 +378,7 @@ header.scroll {
 .servicios{
     overflow-y: hidden;
     background: none;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     width: 100%;
     flex-direction: column !important;
@@ -411,16 +411,31 @@ header.scroll {
     margin-left: 20px;
 }
 
+.logoFooter{
+    position: absolute;
+    bottom: 0;
+    width: 7rem;
+    z-index: 99;
+}
 
 /* section 4 */
 /* contact */
 
-#contact{
+#contacto{
     height: 100vh; 
-    background: rgb(0, 0, 0);
-    border: 2px solid red;
+    background: rgb(17, 17, 17);
+    margin-top: -3.5rem;
     z-index: 1;
 }
+
+
+
+
+
+
+
+
+
 
 
 
