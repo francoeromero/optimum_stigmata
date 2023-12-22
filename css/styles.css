@@ -515,9 +515,10 @@ header.scroll {
 /* ********************************************************* */
 @media (max-width: 991px){
     #home{
-        height: 100vh;
+        height: 90vh;
         overflow-y: hidden;
     }
+
     .textBox h2 {
         margin-top: 5rem;
     }
@@ -592,9 +593,9 @@ header.scroll {
         margin-left: 5.5rem;
     }
     .sci {
-        background: rgba(0,0,0,0.1);
-        right: 0;
-        width: 50px;
+        background: rgba(0,0,0,0);
+        right: 10;
+        width: 20px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
