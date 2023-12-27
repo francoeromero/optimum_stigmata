@@ -511,6 +511,18 @@ header.scroll {
     width: 25%;
     height: 80%;
     border-right: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.columna2 ul li{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.columna2 ul li a{
+    color: rgb(185, 185, 185);
 }
 
 .columna1 a p{
@@ -799,6 +811,9 @@ header.scroll {
     }
     .columna1{
         width: 12rem !important;
+    }
+    .columna2{
+        display: none;
     }
     .logo p, .logo h5{
         font-size: 10px;
