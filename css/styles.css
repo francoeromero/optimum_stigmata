@@ -495,7 +495,13 @@ header.scroll {
     transition: 0.5s;
 }
 
-
+.columna1{
+    width: 25%;
+    height: 80%;
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
 
 .columna1, .columna2, .columna3{
     margin-left: 1rem;
@@ -547,6 +553,14 @@ header.scroll {
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    align-items: center;
+}
+
+#rotulo{
+    height: 13rem;
+    width: 100%;
+    background: black;
+    display: flex;
     align-items: center;
 }
 
