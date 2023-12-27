@@ -525,6 +525,25 @@ header.scroll {
     color: rgb(185, 185, 185);
 }
 
+.columna3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columna3 ul li {
+    list-style: none;
+}
+.columna3 ul li  img{
+    margin-bottom: 1rem;
+}
+.columna3 ul li a{
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+
 .columna1 a p{
     font-size: 1.5rem;
     margin-bottom: -0.8rem;
@@ -845,6 +864,19 @@ header.scroll {
 
     .textEmpresa{
         padding-top: 10rem;
+    }
+
+    .columna3{
+        align-items: flex-end;
+        justify-content: flex-start;
+        scale: .8;
+    }
+    .columna3 ul li img{
+        scale: .8;
+        margin-left: -3rem;
+    }
+    .columna3 ul {
+        margin-left: -2rem;
     }
 }
 
