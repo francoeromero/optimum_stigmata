@@ -515,7 +515,7 @@ header.scroll {
 /* ********************************************************* */
 @media (max-width: 991px){
     #home{
-        height: 90vh;
+        height: 120vh;
         overflow-y: hidden;
     }
 
@@ -529,6 +529,13 @@ header.scroll {
         margin: 2rem;
         scale: .8;
     }
+
+    .imgBox img{
+
+        width: 100%;
+        padding-left: 0.5rem;
+    }
+
     bg::before{
         display: none;
         background: url(..img/background_shadow.png);
